@@ -12,49 +12,105 @@
     <header>
       <svg style="border: 1px solid black;" widht="101px" height="101px">
         <image xlink:href="../img/im_logo_new.svg" width="100px" height="100px"></image>
-
       </svg>
-    </header>
-    <section id="Datos_personales">
       <h1>Curriculum Vitae</h1>
       <p><h2 title="Indique su información personal">Datos Personales</h2></p>
       <p><h2>Nombre:</h2> <h3>Michael Adrian</h3></p>
       <p><h2>Apellido:</h2> <h3>Gonzalez Moron</h3></p>
       <p><h2>Fecha:</h2> <h3>10/04/1984</h3></p>
       <p><h2>Lugar de Nacimiento:</h2><h3> Caracas - Venezuela</h3></p>
+    </header>
+    <section id="Datos_personales">
+
     </section>
     <nav>
       <p><a href="../index.html">Inicio</a> | <a href="../html/educacion.html" title="ir a educación">Educacion</a> | <a href="../html/experiencia.html" title="ir a experienncia">Experiencia</a>
       </p>
     </nav>
     <section id="Educacion">
-          <p> <h2>Formacion academica</h2>
-              <ul style="list-style-type:circle">
-                <li>Máster  en Marketing Digital y Negocios Digitales.  Instituto Internacional Español de Marketing  Digital  2018</li>
-                <li>Licenciatura en Enfermería. Universidad Abierta Interamericana  (Revalida – en curso)</li>
-                <li>Licenciatura en Enfermería. Universidad Central de Venezuela. 2014</li>
-                <li>Técnico Superior Universitario en Enfermería. Colegio Univertario de Enfermería Cruz Roja Venezolana 2007</li>
-              </ul>
-          </p>
-          <p>
-            <h2>Cursos</h2>
-            <ul style="list-style-type:circle">
-              <li>Carrera de Negocios Digitales – En Curso – NextU</li>
-              <li>Carrera de Desarrollo Web Full Stack – En Curso - NextU</li>
-              <li>Certificación Google Adwords Fundamentals Octubre 2018 Identificación de culminación: 21038926</li>
-              <li>Metodología Silex. EmprendeAprendiendo.com</li>
-              <li>Certificación en Redacción Web Profesional. VContenidos. Septiembre 2018</li>
-              <li>Redacción en Internet 2da edición. Universidad de Navarra 2017 (15 hrs)</li>
-              <li>Taller de Periodismo Musical. Feria Internacional de Música de Venezuela 2016 (4hras)</li>
-              <li>Soporte Básico de Vida para Integrantes del Equipo de Salud - Hospital de Clínicas – Caracas 2016</li>
-              <li>Actualización En Anestesia Para Personal de Enfermería - MSD y S. Venezolana de Anestesiología - 2013</li>
-              <li>Buenas Prácticas para la Desinfección de Instrumental Quirúrgico -Johnson&Johnson Caracas 2012</li>
-              <li>Soporte Básico de Vida Para Equipo de Salud- American Heart Association Venezuela 2010</li>
-              <li>Soporte Básico de Vida para Integrantes del Equipo de Salud - Hospital de Clínicas –Caracas 2008</li>
-              <li>III Simposio Universitario Sobre Salud Sexual y Reproductiva UCV Caracas 2001</li>
-            </ul>
-          </p>
-          </p>
+      <p> <h2>Formacion academica</h2> </p>
+      <table border="2">
+        <thead>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2018</td>
+            <td>IIEMD</td>
+            <td>España</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2018</td>
+            <td>Universidad Abierta Interamericana</td>
+            <td>Argentina</td>
+            <td>En Curso</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>Universidad Central de Venezuela</td>
+            <td>Venezuela</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>Col. Univertario de Enfermería Cruz Roja Venezolana</td>
+            <td>Venezuela</td>
+            <td>SI</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+            <Form autocomplete="on" name="Formacion_academica" id="Formacion_academica">
+              <legend><h2>Agregar Estudios </h2></legend>
+              <p>
+                <label for="año" title="año de estudio">Año</label><br/>
+                  <select>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                  </select>
+              </p>
+              <p>
+                <label for="Institucion">Institucion</label>
+                <input type="text" name="Institucion" required>
+              </p>
+              <p>
+                <label for="lugar">Lugar</label>
+                <textarea placeholder="indique el lugar de estudio" name="Lugar" rows="4" cols="30" maxlength="250"></textarea>
+              </p>
+              <p><input type="checkbox" name="en curso"> en curso </p>
+              <p> <input type="submit" name="Enviar"></input> </p>
+            </form>
+      </p>
     </section>
     <footer>
       <p>  <strong>Email</strong> IngenioMegalico@gmail.com <br> <strong>Teléfono:</strong> +54 9 1129999999 <br> <a href="https://twitter.com/IngenioMegalico">TW</a> | <a href="https://es-la.facebook.com/ingeniomegalico/">FC</a> | <a href="https://www.instagram.com/ingeniomegalico">IG</a> | <a href="https://ar.linkedin.com/in/ingeniomegalico">IN</a> @ingeniomegalico - <a href="http://wordpress.com/ingeniomegalico"> wordpress.com/ingeniomegalico </a> </p>
